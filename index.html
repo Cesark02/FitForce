@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitForce</title>
+    <!-- LINK CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- ICONS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- CSS LOCAL -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+
+        <nav class="navbar navbar_mio navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="./img/FitForce Logo.png" alt="Logo FitForce">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="btn_navbar" href="#rutinas">Rutinas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn_navbar" href="#calendario">Calendario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn_navbar" href="#testimonios">Testimonios</a>
+                        </li>
+                        <!-- <li class="btn_navbar dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner / Hero Carrusel -->
+        <section class="banner">
+            <div class="carousel">
+                <div class="slides">
+                    <!-- Slide 1 -->
+                    <div class="slide active">
+                        <div class="slide-text">
+                            <h1 class="banner_tittle">FitForce</h1>
+                            <p>Nunca es tarde para empezar, es salud, es vida, es amarte. </p>
+                            <div>
+                                <a class="btn_navbar" href="#">Testimonios</a>
+                            </div>
+                        </div>
+                        <div class="slide-image s-i-1">
+                            <!-- Contenedor donde va la imagen -->
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <div class="slide-text">
+                            <h2 class="banner_tittle">Fuerza, Fortaleza</h2>
+                            <p>Tu mejor versión comienza hoy</p>
+                            <div>
+                                <a class="btn_navbar" href="#">Testimonios</a>
+                            </div>
+                        </div>
+                        <div class="slide-image s-i-2">
+                            <!-- Contenedor donde va la imagen -->
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <div class="slide-text">
+                            <h2 class="banner_tittle">Transforma tu vida</h2>
+                            <p>Disciplina y motivación, haran de tu vida algo mejor</p>
+                            <div>
+                                <a class="btn_navbar" href="#">Testimonios</a>
+                            </div>
+                        </div>
+                        <div class="slide-image s-i-3">
+                            <!-- Contenedor donde va la imagen -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles -->
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+
+                <!-- Dots -->
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Sobre Nosotros -->
+        <section class="sobre-nosotros" id="sobre-nosotros">
+            <div class="sn-container">
+                <div class="sn-texto">
+                    <h2 class="sn-titulo titulos">Sobre Nosotros</h2>
+                    <p>En FitForce creemos en el poder de la disciplina, la fuerza y la constancia. Nuestro objetivo es
+                        motivarte cada día a lograr tu mejor versión física y mental, en un ambiente amigable y
+                        profesional.</p>
+                </div>
+                <div class="sn-imagen">
+                    <!-- Fondo -->
+                </div>
+            </div>
+        </section>
+        <!-- Rutinas -->
+        <section class="rutinas" id="rutinas">
+            <h2 class="titulos">Rutinas</h2>
+            <div class="accordion">
+                <!-- Entrenamiento Normal -->
+                <div class="accordion-item">
+                    <button class="accordion-btn">
+                        Entrenamiento Normal
+                        <i class="bi bi-chevron-down icon-flechita"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="nivel">
+                            <h3 class="nivel-titulo">Principiante</h3>
+                            <div class="nivel-contenido">
+                                <p>Ideal para iniciar tu camino fitness con ejercicios básicos y seguros.</p>
+                                <ul>
+                                    <li>Calentamiento: Caminata 10min</li>
+                                    <li>Sentadillas 3x15</li>
+                                    <li>Press de hombro con mancuernas 3x12</li>
+                                    <li>Plancha 3x30s</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="nivel">
+                            <h3 class="nivel-titulo">Intermedio</h3>
+                            <div class="nivel-contenido">
+                                <p>Rutina para progresar en fuerza y resistencia muscular.</p>
+                                <ul>
+                                    <li>Calentamiento: Elíptica 10min</li>
+                                    <li>Sentadillas 4x12</li>
+                                    <li>Press de banca 4x10</li>
+                                    <li>Remo con barra 4x12</li>
+                                    <li>Plancha 3x1min</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="nivel">
+                            <h3 class="nivel-titulo">Avanzado</h3>
+                            <div class="nivel-contenido">
+                                <p>Desafía tus límites con ejercicios compuestos y mayor intensidad.</p>
+                                <ul>
+                                    <li>Calentamiento: Cuerda 5min + movilidad articular</li>
+                                    <li>Sentadillas con peso 5x10</li>
+                                    <li>Press militar 5x8</li>
+                                    <li>Dominadas 4x10</li>
+                                    <li>Burpees 3x20</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CrossFit -->
+                <div class="accordion-item">
+                    <button class="accordion-btn">
+                        CrossFit
+                        <i class="bi bi-chevron-down icon-flechita"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="nivel">
+                            <h3 class="nivel-titulo">Principiante</h3>
+                            <div class="nivel-contenido">
+                                <p>Ideal para quienes inician en CrossFit con movimientos básicos y adaptaciones
+                                    progresivas.</p>
+                                <ul>
+                                    <li>Calentamiento: Remo suave 5min</li>
+                                    <li>Air Squats 3x15</li>
+                                    <li>Push Ups (rodillas apoyadas) 3x10</li>
+                                    <li>Planchas 3x30s</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="nivel">
+                            <h3 class="nivel-titulo">Intermedio</h3>
+                            <div class="nivel-contenido">
+                                <p>Rutinas con movimientos funcionales de intensidad media para mejorar fuerza y
+                                    resistencia.</p>
+                                <ul>
+                                    <li>Calentamiento: Jumping jacks 3min + movilidad</li>
+                                    <li>Deadlift 4x10</li>
+                                    <li>Clean & Jerk 4x8</li>
+                                    <li>Burpees 3x15</li>
+                                    <li>WOD: 10min AMRAP (10 Kettlebell swings, 10 push ups, 10 sit ups)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="nivel">
+                            <h3 class="nivel-titulo">Avanzado</h3>
+                            <div class="nivel-contenido">
+                                <p>Entrenamiento de alta intensidad con ejercicios complejos y enfoque en rendimiento
+                                    máximo.</p>
+                                <ul>
+                                    <li>Calentamiento: Cuerda rápida 5min + movilidad articular</li>
+                                    <li>Snatch 5x3</li>
+                                    <li>Clean & Jerk 5x5</li>
+                                    <li>Muscle Ups 4x5</li>
+                                    <li>WOD: 15min AMRAP (5 pull-ups, 10 push-ups, 15 squats, 20 burpees)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Calendario -->
+        <section class="calendario" id="calendario">
+            <h2 class="calendario-titulo titulos">Calendario Semanal de Rutinas</h2>
+            <div class="calendario-container">
+
+                <div class="dia">
+                    <h3 class="dia-titulo">Lunes</h3>
+                    <p>Full Body</p>
+                    <p>Cardio: 20min</p>
+                    <p>Core: Abdominales</p>
+                </div>
+
+                <div class="dia">
+                    <h3 class="dia-titulo">Martes</h3>
+                    <p>Pecho y Tríceps</p>
+                    <p>Cardio: 15min</p>
+                    <p>Core: Plancha</p>
+                </div>
+
+                <div class="dia">
+                    <h3 class="dia-titulo">Miércoles</h3>
+                    <p>Espalda y Bíceps</p>
+                    <p>Cardio: 20min</p>
+                    <p>Core: Oblicuos</p>
+                </div>
+
+                <div class="dia">
+                    <h3 class="dia-titulo">Jueves</h3>
+                    <p>Piernas y Glúteos</p>
+                    <p>Cardio: 10min</p>
+                    <p>Core: Plancha lateral</p>
+                </div>
+
+                <div class="dia">
+                    <h3 class="dia-titulo">Viernes</h3>
+                    <p>CrossFit WOD</p>
+                    <p>HIIT: 30min</p>
+                    <p>Core: Completo</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Motivacion y Nutricion -->
+        <section class="nutricion-motivacion" id="nutricion-motivacion">
+            <h2 class="titulos">Nutrición & Motivación</h2>
+
+            <div class="nm-carousel">
+                <div class="nm-slides">
+                    <!-- Slide 1: Nutrición -->
+                    <div class="nm-slide nm-image-1">
+                        <div class="nm-overlay">
+                            <div class="nm-text">
+                                <h3>Aliméntate para tener energía</h3>
+                                <p>Incorpora proteínas magras, carbohidratos complejos y grasas saludables para
+                                    potenciar tu rendimiento.</p>
+                                <ul>
+                                    <li>🥗 Ensaladas frescas</li>
+                                    <li>🍗 Pollo, pescado o tofu</li>
+                                    <li>🍚 Arroz integral o quinoa</li>
+                                    <li>🥑 Frutos secos y aguacate</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Motivación -->
+                    <div class="nm-slide nm-image-2">
+                        <div class="nm-overlay">
+                            <div class="nm-text">
+                                <h3>Mantente enfocado en tu salud</h3>
+                                <p>El éxito no es solo físico, también mental. Cada día es una nueva oportunidad para
+                                    mejorar.</p>
+                                <ul>
+                                    <li>💪 Confía en el proceso</li>
+                                    <li>🧘‍♂️ Prioriza tu bienestar mental</li>
+                                    <li>🌟 Celebra cada logro</li>
+                                    <li>🔥 Nunca pares de moverte</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nm-controls">
+                    <button class="nm-prev">&#10094;</button>
+                    <button class="nm-next">&#10095;</button>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonios -->
+        <section class="testimonios-contacto" id="testimonios">
+            <h2 class="titulos">Testimonios & Contacto</h2>
+            <div class="tc-container">
+                <!-- IZQUIERDA: Testimonios -->
+                <div class="testimonios-container">
+                    <!-- Card 1 -->
+                    <div class="testimonio-card">
+                        <div class="testimonio-img-box">
+                            <img src="./img/persona1.jpg" alt="Ana López" class="testimonio-img">
+                        </div>
+                        <div class="testimonio-info">
+                            <h3 class="testimonio-nombre">Ana López</h3>
+                            <h4 class="testimonio-titulo">Estudiante</h4>
+                            <p class="testimonio-texto">“Gracias a FitForce me siento llena de energía y motivada cada
+                                día.”</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="testimonio-card">
+                        <div class="testimonio-img-box">
+                            <img src="./img/persona2.jpg" alt="Carlos Ramírez" class="testimonio-img">
+                        </div>
+                        <div class="testimonio-info">
+                            <h3 class="testimonio-nombre">Carlos Ramírez</h3>
+                            <h4 class="testimonio-titulo">Ingeniero</h4>
+                            <p class="testimonio-texto">“El ambiente y las rutinas me ayudaron a recuperar mi salud.”
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="testimonio-card">
+                        <div class="testimonio-img-box">
+                            <img src="./img/persona3.jpg" alt="María Fernández" class="testimonio-img">
+                        </div>
+                        <div class="testimonio-info">
+                            <h3 class="testimonio-nombre">María Fernández</h3>
+                            <h4 class="testimonio-titulo">Emprendedora</h4>
+                            <p class="testimonio-texto">“Ahora mi día no inicia sin un entrenamiento lleno de
+                                disciplina.”</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DERECHA: Contacto -->
+                <div class="contacto-container">
+                    <h3 class="contacto-titulo">Contáctanos</h3>
+                    <p class="contacto-texto">Únete a FitForce hoy. ¡Estamos para ayudarte!</p>
+
+                    <div class="contacto-info">
+                        <p><i class="bi bi-telephone-fill"></i> +506 8888 8888</p>
+                        <p><i class="bi bi-envelope-fill"></i> info@fitforce.com</p>
+                    </div>
+
+                    <div class="contacto-redes">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+
+                    <form class="contacto-form">
+                        <input type="text" placeholder="Nombre completo" required>
+                        <input type="email" placeholder="Correo electrónico" required>
+                        <textarea placeholder="Tu mensaje..." required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+
+                    <form class="suscripcion-form">
+                        <input type="email" placeholder="Suscríbete para recibir noticias" required>
+                        <button type="submit">Suscribirme</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Columna 1: Logo y descripción -->
+            <div class="footer-col">
+                <img src="./img/FitForce Logo.png" alt="FitForce Logo" class="footer-logo">
+                <p>FitForce es más que un gimnasio, es tu camino hacia la fuerza, salud y bienestar. Únete hoy y
+                    transforma tu vida.</p>
+            </div>
+
+            <!-- Columna 2: Navegación rápida -->
+            <div class="footer-col">
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#rutinas">Rutinas</a></li>
+                    <li><a href="#calendario">Calendario</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Contacto y redes -->
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <p><i class="bi bi-telephone-fill"></i> +506 8888-8888</p>
+                <p><i class="bi bi-envelope-fill"></i> contacto@fitforce.com</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 FitForce. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!-- JS LOCAL -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

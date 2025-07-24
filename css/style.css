@@ -1,0 +1,901 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@font-face {
+    font-family: 'GamingSporty';
+    src: url("../font/GamingSporty.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /* Colores Morados Fondos-Botones */
+    --color-morado-prin: #16002A;
+    --color-morado-secun: #8D4FC8;
+    --color-morado-3: #2D0057;
+    /* Colores amarillos Textos-titulos-subtitulos */
+    --color-amarillo-prin: #FFE72E;
+    --color-amarillo-secun: #FFF9CB;
+}
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: var(--color-morado-prin);
+}
+
+a {
+    text-decoration: none;
+}
+
+.titulos {
+    font-family: "GamingSporty", sans-serif;
+    font-size: 72px;
+    color: var(--color-amarillo-prin);
+}
+
+.banner_tittle {
+    font-family: "GamingSporty", sans-serif;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-amarillo-prin);
+}
+
+/* Navbar */
+.navbar_mio {
+    display: flex !important;
+    position: fixed !important;
+    z-index: 10 !important;
+    gap: 60px !important;
+    width: 100% !important;
+    align-items: center !important;
+    padding: 10px 50px !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+}
+.navbar-nav{
+    display: flex;
+    gap: 20px;
+}
+.logo {
+    width: 112px;
+    height: 78px;
+}
+
+.navbar-toggler{
+    background: var(--color-morado-secun);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.btn_navbar {
+    display: inline-flex;
+    padding: 15px;
+    border-radius: 5px;
+    background: var(--color-morado-secun);
+    color: #FFF;
+    font-family: "Ubuntu";
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Banner / Carrusel */
+.banner {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    /* 3 slides */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.slide-text {
+    width: 60vw;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    gap: 40px;
+}
+
+.slide-text p {
+    font-size: 24px;
+}
+
+.slide-image {
+    width: 40vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.s-i-1 {
+    background: url(../img/slide1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.s-i-2 {
+    background: url(../img/slide2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.s-i-3 {
+    background: url(../img/slide3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Controles */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Dots */
+.dots {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #717171;
+}
+
+
+
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+
+.sobre-nosotros {
+    padding: 100px 50px;
+    background-color: var(--color-morado-3);
+    color: var(--color-amarillo-secun);
+}
+
+.sn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.sn-texto {
+    flex: 1 1 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sn-texto p {
+    font-size: 20px;
+}
+
+.sn-imagen {
+    flex: 1 1 500px;
+    height: 400px;
+    background: url(../img/sn-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+
+.rutinas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 100px 50px;
+    background-color: var(--color-morado-prin);
+    color: var(--color-amarillo-secun);
+}
+
+.accordion {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.accordion-item {
+    border-radius: 45px !important;
+    border: none;
+    overflow: hidden;
+}
+
+.accordion-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--color-morado-secun);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.accordion-content {
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-morado-3);
+    transition: max-height 0.3s ease-out;
+    padding: 0px 20px;
+}
+
+.accordion-btn.active {
+    background-color: var(--color-amarillo-prin);
+    color: var(--color-morado-prin);
+}
+
+/* Icono flecha */
+.icon-flechita {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* Niveles de dificultad */
+.nivel {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 15px;
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px 0px;
+}
+
+.nivel-titulo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: "GamingSporty", sans-serif;
+}
+
+.nivel-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.nivel-contenido ul {
+    list-style: disc;
+    padding-left: 30px;
+}
+
+.nivel-contenido ul li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Ejemplo de fondo para cada nivel, cámbialo con tus imágenes */
+.nivel:nth-child(1) {
+    background-image: url("../img/entra-1.png");
+}
+
+.nivel:nth-child(2) {
+    background-image: url("../img/entra-2.png");
+}
+
+.nivel:nth-child(3) {
+    background-image: url("../img/entra-3.png");
+}
+
+/* Fondos para niveles CrossFit, usa tus imágenes */
+.accordion-item:nth-child(2) .nivel:nth-child(1) {
+    background-image: url("../img/entra-4.png");
+}
+
+.accordion-item:nth-child(2) .nivel:nth-child(2) {
+    background-image: url("../img/entra-5.png");
+}
+
+.accordion-item:nth-child(2) .nivel:nth-child(3) {
+    background-image: url("../img/entra-6.png");
+    ;
+}
+
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+
+.calendario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 100px 50px;
+    background: url("../img/calendario-bg.png") center center/cover no-repeat;
+    position: relative;
+    color: #fff;
+}
+
+.calendario::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Overlay oscuro */
+    z-index: 0;
+}
+
+.calendario-titulo {
+    position: relative;
+    font-family: "GamingSporty", sans-serif;
+    font-size: 72px;
+    color: var(--color-amarillo-prin);
+}
+
+.calendario-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.dia {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px 20px;
+    width: 200px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dia:hover {
+    transform: scale(1.05);
+    /* se hace más grande */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    /* sombra suave */
+}
+
+.dia-titulo {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--color-amarillo-prin);
+}
+
+.dia p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+.nutricion-motivacion {
+    display: flex;
+    align-items: center;
+    padding: 100px 50px;
+    background: var(--color-morado-prin);
+    overflow: hidden;
+}
+
+.nm-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.nm-slides {
+    display: flex;
+    /* 2 slides */
+    width: 200%;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.nm-slide {
+    width: 50%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.nm-text {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    font-size: 20px;
+}
+
+.nm-text h3 {
+    font-size: 36px;
+    color: var(--color-amarillo-prin);
+}
+
+ul {
+    list-style: none;
+}
+
+.nm-image {
+    flex: 1 1 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+
+.nm-image-1 {
+    background: url('../img/comida-sana.jpg') center/cover no-repeat;
+}
+
+.nm-image-2 {
+    background: url('../img/motivacion.jpg') center/cover no-repeat;
+}
+
+.nm-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.nm-prev,
+.nm-next {
+    font-size: 36px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 10px;
+    transition: background 0.3s ease;
+}
+
+.nm-prev:hover,
+.nm-next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+
+.testimonios-contacto {
+    padding: 100px 50px;
+    background: var(--color-morado-prin);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.tc-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Testimonios cards (izquierda) */
+.testimonios-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonio-card {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.testimonio-img-box {
+    background: var(--color-morado-secun);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--color-amarillo-prin);
+}
+
+.testimonio-info {
+    flex: 1;
+    background: var(--color-morado-3);
+    padding: 20px;
+    color: white;
+}
+
+.testimonio-nombre {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: var(--color-amarillo-prin);
+}
+
+.testimonio-titulo {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.testimonio-texto {
+    font-size: 14px;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+
+/* Contacto (derecha) */
+.contacto-container {
+    flex: 1;
+    background: var(--color-morado-3);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+}
+
+.contacto-titulo {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: var(--color-amarillo-prin);
+}
+
+.contacto-texto {
+    margin-bottom: 20px;
+}
+
+.contacto-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contacto-redes {
+    margin: 20px 0;
+}
+
+.contacto-redes a {
+    margin-right: 15px;
+    font-size: 24px;
+    color: var(--color-amarillo-prin);
+}
+
+.contacto-form input,
+.contacto-form textarea,
+.suscripcion-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contacto-form button,
+.suscripcion-form button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--color-morado-secun);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contacto-form button:hover,
+.suscripcion-form button:hover {
+    background: var(--color-amarillo-prin);
+    color: var(--color-morado-prin);
+}
+
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+
+
+.footer {
+    background: var(--color-morado-3);
+    color: var(--color-amarillo-secun);
+    padding: 50px 20px 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    flex: 1 1 250px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-col h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--color-amarillo-prin);
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: var(--color-amarillo-secun);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: var(--color-amarillo-prin);
+}
+
+.footer-col p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-socials a {
+    color: var(--color-amarillo-secun);
+    font-size: 20px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: var(--color-amarillo-prin);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid var(--color-morado-secun);
+    padding-top: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+
+
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+
+/* MEDIA QUERYS */
+
+
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+/* /\/\//\/\///\//\//\\/\/\/\/\//\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\\/\/\/\/\/\/\/\\/\/\/\/ */
+
+/* ==================== MEDIA QUERIES RESPONSIVE ==================== */
+
+/* ========== RESPONSIVE DESIGN CLEAN REBUILD ========== */
+
+/* Mobile First Adjustments */
+
+
+
+/* Mostrar menú hamburguesa en móviles */
+
+@media (max-width: 769px) {
+    body {
+        font-size: 16px;
+    }
+
+    .titulos,
+    .banner_tittle {
+        font-size: 36px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: var(--color-amarillo-prin);
+    }
+
+    /* Banner */
+
+    .slide {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slide-text {
+        order: 1;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .slide-image {
+        order: 2;
+        width: 100%;
+        height: 300px;
+    }
+
+    /* Sobre Nosotros */
+
+    .sn-container {
+        flex-direction: column;
+    }
+
+    .sn-texto {
+        order: 1;
+        flex: initial;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sn-imagen {
+        order: 2;
+        width: 100%;
+        height: 300px;
+    }
+
+    /* Nutrición y Motivación */
+
+    .nm-slide {
+        flex-direction: column;
+    }
+
+    .nm-text {
+        order: 1;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nm-image {
+        order: 2;
+        width: 100%;
+        height: 300px;
+    }
+
+    /* Tipografías generales */
+
+    h1,
+    h2,
+    h3,
+    p,
+    a,
+    button {
+        font-size: 1rem;
+    }
+
+    .banner_tittle {
+        font-size: 28px;
+    }
+
+    .accordion-btn {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .nivel-titulo {
+        font-size: 20px;
+    }
+
+    .nivel-contenido {
+        font-size: 16px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .nutricion-motivacion{
+        flex-direction: column;
+    }
+    
+    .tc-container {
+        flex-direction: column;
+    }
+}
