@@ -126,30 +126,21 @@ a {
 
 .slide-image {
     width: 40vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .s-i-1 {
-    background: url(../img/slide1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
+    width: 100%;
 }
 
 .s-i-2 {
-    background: url(../img/slide2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
+    width: 100%;
 }
 
 .s-i-3 {
-    background: url(../img/slide3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
+    width: 100%;
 }
 
 /* Controles */
@@ -797,21 +788,20 @@ ul {
     }
 
     /* Banner */
-
+    .slides{
+        align-items: center;
+    }
     .slide {
         flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
 
     .slide-text {
-        order: 1;
         width: 100%;
         padding: 20px;
     }
 
     .slide-image {
-        order: 2;
         width: 100%;
         height: 300px;
     }
