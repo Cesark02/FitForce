@@ -363,7 +363,7 @@ a {
     align-items: center;
     gap: 40px;
     padding: 100px 50px;
-    background: url("../img/calendario-bg.png") center center/cover no-repeat;
+    background: url("../img/calendario-bg.jpg") center center/cover no-repeat;
     position: relative;
     color: #fff;
 }

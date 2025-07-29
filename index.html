@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="">
+    <meta name="description" content="FitForce es tu gimnasio ideal para transformar tu vida. Ofrecemos entrenamientos personalizados, nutrición, motivación y rutinas para todos los niveles. Únete hoy y alcanza tus metas.">
     <title>FitForce</title>
     <!-- LINK CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -389,21 +389,28 @@
                     </div>
 
                     <div class="contacto-redes">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.whatsapp.com/?lang=es_LA"><i class="bi bi-whatsapp"></i></a>
                     </div>
 
-                    <form class="contacto-form">
-                        <input type="text" placeholder="Nombre completo" required>
-                        <input type="email" placeholder="Correo electrónico" required>
-                        <textarea placeholder="Tu mensaje..." required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
+                    <form class="contacto-form mb-3" action="tu_archivo_destino.php" method="POST">
+                        <div>
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                        </div>
 
-                    <form class="suscripcion-form">
-                        <input type="email" placeholder="Suscríbete para recibir noticias" required>
-                        <button type="submit">Suscribirme</button>
+                        <div>
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+                        </div>
+
+                        <div>
+                            <label for="mensaje">Tu mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje..." required></textarea>
+                        </div>
+
+                        <button type="submit">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -435,9 +442,9 @@
                 <p><i class="bi bi-telephone-fill"></i> +506 8888-8888</p>
                 <p><i class="bi bi-envelope-fill"></i> contacto@fitforce.com</p>
                 <div class="footer-socials">
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.whatsapp.com/?lang=es_LA"><i class="bi bi-whatsapp"></i></a>
                 </div>
             </div>
         </div>
