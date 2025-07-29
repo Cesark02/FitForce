@@ -41,7 +41,7 @@ a {
 
 .banner_tittle {
     font-family: "GamingSporty", sans-serif;
-    font-size: 128px;
+    font-size: 85px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -96,6 +96,9 @@ a {
     position: relative;
     overflow: hidden;
 }
+.carousel{
+    width: 300%;
+}
 
 .slides {
     display: flex;
@@ -105,41 +108,37 @@ a {
 }
 
 .slide {
+    display: flex;
     width: 100vw;
     height: 100vh;
     display: flex;
 }
 
 .slide-text {
-    width: 60vw;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 50px;
-    gap: 40px;
+    gap: 40px; 
+    width: 60%;
 }
 
 .slide-text p {
     font-size: 24px;
 }
 
+
+
 .slide-image {
-    width: 40vw;
+    display: flex;
+    width: 40%;
 }
 
-.s-i-1 {
-    object-fit: cover;
-    width: 100%;
-}
 
-.s-i-2 {
+.s-i-1, .s-i-2, .s-i-3{
     object-fit: cover;
-    width: 100%;
-}
-
-.s-i-3 {
-    object-fit: cover;
+    object-position: center;
     width: 100%;
 }
 
